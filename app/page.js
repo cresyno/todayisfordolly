@@ -313,30 +313,44 @@ ${page7Answer}`
       )}
 
       {/* PAGE 07 */}
-      {page === 7 && (
-        <section className="scene answer-page">
-          <div className="section-label">07 — ONE QUESTION FOR MY QUEEN 👀</div>
+{page === 7 && (
+  <section className="scene answer-page">
+    <div className="section-label">
+      07 — ONE QUESTION FOR MY QUEEN 👀
+    </div>
 
-          <div className="minimal-question">
-            <span>Queen...</span>
-            <h2>What do you think I love most about you? 🥺</h2>
-          </div>
+    <div className="minimal-question">
+      <span>Queen...</span>
 
-          <textarea
-            value={page7Answer}
-            onChange={(e) => setPage7Answer(e.target.value)}
-            placeholder="Tell me what you think..."
-          />
+      <h2>
+        What do you think I love most about you? 🥺
+      </h2>
+    </div>
 
-          <button
-            className="whatsapp-button"
-            onClick={answerPage7}
-            disabled={!page7Answer.trim()}
-          >
-            Tell Taiwo ❤️
-          </button>
-        </section>
-      )}
+    <textarea
+      value={page7Answer}
+      onChange={(e) => setPage7Answer(e.target.value)}
+      placeholder="Tell me what you think..."
+    />
+
+    <button
+      className="whatsapp-button"
+      onClick={answerPage7}
+      disabled={!page7Answer.trim()}
+    >
+      Tell Taiwo ❤️
+    </button>
+
+    {page7Answer.trim() && (
+      <button
+        className="continue-button"
+        onClick={next}
+      >
+        Continue → 💌
+      </button>
+    )}
+  </section>
+)}
 
       {/* PAGE 08 */}
       {page === 8 && (
