@@ -647,6 +647,17 @@ button:active {
   margin-top: 15px;
 }
 
+.continue-button {
+  margin-top: 14px;
+  min-height: 48px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  color: white;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.18);
+  font-weight: 800;
+  animation: fadeUp .5s ease both;
+}
 /* PAGE 08 */
 
 .letter-page {
